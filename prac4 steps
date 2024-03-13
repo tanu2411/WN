@@ -1,0 +1,22 @@
+Arranging devices and creating connections
+Configure wireless router and connect server to wireless router using Ethernet cable
+Configure Server by setting IP Config in Server0 to DHCP
+          server > desktop > ip config > dhcp > ip address will be assigned
+add label of the assigned ip address to server
+Configure and connect all PC’s to wireless router by Changing port to wireless adapter of all PC’s
+After adding wireless adapter of all PC’s they will automatically get connected with wireless router because of DHCP
+Checking connection of pc’s with server
+go to each pc > command prompt > and ping the ip address assigned by dhcp 
+              > web browser > type the ip address assigned by dhcp 
+Configure IPv4 firewall in server to setup networks based firewall and add conditions
+          condition 1: action > deny
+                       protocol > icmp
+                       remote ip > 0.0.0.0
+                       remote wildcard mask > 255.255.255.255 > add
+          condition 2: action > allow
+                       protocol > ip
+                       remote ip > 0.0.0.0
+                       remote wildcard mask > 255.255.255.255 > add
+now again go to each pc > command prompt > and ping the ip address assigned by dhcp 
+                        > web browser > type the ip address assigned by dhcp
+command prompt will block the icmp, whereas web browser allows the ip 

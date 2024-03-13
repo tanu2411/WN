@@ -1,0 +1,16 @@
+creating connections using ethernet and serial cable between devices
+configuring all devices
+pc0 > ip config > 192.168.1.2 > default gateway > 192.168.1.1
+pc1 > ip config > 192.168.2.2 > default gateway > 192.168.2.1
+router0 > fast ethernet 0/0 > 192.168.1.1
+        > fast ethernet 0/1 > 20.0.0.1
+        > serial 0/0/0 > 10.0.0.1 > clock rate > 64000
+router1 > fast ethernet 0/0 > 192.168.2.1 
+        > serial 0/0/0 > 10.0.0.2 > clock rate > 64000
+pc2 > ip conig in desktop > set to dhcp
+#configuring wireless router 
+click on wireless router > gui > setup > basic setup > change the ip address from 192.168.0.1 to 192.168.1.1
+go to the bottom of the page ans select save settings
+in wireless > wireless security > adding security mode as WEP > setting up the key as 2a2a2a2a2a > bottom of the page save settings
+click on pc2 > change the port > go to config > select wireless0 > select WEP > add WEP key as 2a2a2a2a2a 
+pc2 will connect to wireless router

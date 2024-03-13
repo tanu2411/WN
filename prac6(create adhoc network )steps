@@ -1,0 +1,20 @@
+Step1: Arrange all components i.e., Wireless Router and PC’s
+Take 5 pC ,WRT300N router
+connect router by cropper crossover wire
+Step 2: Configure wireless routers and connect both of them to each other using Ethernet ports:
+In Router0, go to GUI > Wireless > basic wireless settings
+Network SSID: CS and set SSID broadcast to enabled
+Now, click on wireless security,
+Security Mode: WPA2 Personal, Passphrase: ciscorouter1
+Go to the bottom and save settings
+In Router1, go to GUI > Wireless > basic wireless settings
+Network SSID: IT and set SSID broadcast to enabled
+Now, click on wireless security,
+Security Mode: WPA Personal, Passphrase: ciscorouter2
+
+Step 3: Connect all machines/devices (PC’s) to respective router as per our requirements.
+Change the Port of all pc’s with wireless adapter
+Configure Wireless connection: Click on PC0 > Desktop > PC Wireless
+Click on Connect tab > click on refresh > Select CS/IT > Enter Password and connect
+
+Do similar configuration to all respective PC’s

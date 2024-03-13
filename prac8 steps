@@ -1,0 +1,23 @@
+Step 1: Arrange all devices as shown below:
+take Router-PT,Switch-PT,3PC
+connect them bt coppers straight wire
+
+Step 2: Configure Router using CLI, using following commands:
+configure t
+hostname R1
+enable password cisco
+interface fa0/0
+ip address 192.168.2.1 255.255.255.0
+no shutdown
+exit
+Exit
+
+
+Step 3: Configure All PC’s and check the connection.
+Device Interface IPv4 address Other
+PC0 IP config 192.168.2.2 Default Gateway:192.168.2.1
+PC1 IP config 192.168.2.3 Default Gateway:192.168.2.1
+PC2 IP config 192.168.2.4 Default Gateway:192.168.2.1
+
+Step 4: Ping 192.168.2.1 with all the PCs.
+then send message to each pc
